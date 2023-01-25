@@ -1,0 +1,74 @@
+:root {
+    --bg-color: #121212;
+    --font-color: #fff;
+    --overlay-color-dark: #1c1c1c;
+    --overlay-color-light: #bcbcbc;
+}
+
+[data-theme="light"] {
+    --bg-color: #fff;
+    --font-color: #464a50;
+    --overlay-color-dark: #dadada;
+    --overlay-color-light: #f1f1f1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--font-color);
+    -webkit-font-smoothing: antialiased;
+    min-height: 200vh;
+}
+
+body, input, button {
+    font-size: 1rem;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+button {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+aside {
+    background-color: var(--overlay-color-dark);
+    padding: 30px;
+    border-radius: 10px;
+    /* margin: 20px; */
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    bottom: 10px;
+    min-width: 220px;
+}
+
+main {
+    padding: 50px 10% 50px 270px;
+}
+
+.mode_switcher {
+    position: fixed;
+    z-index: 99999;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--overlay-color-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.mode_switcher ion-icon {
+    color: var(--font-color);
+    font-size: 24px;
+    pointer-events: none;
+}
