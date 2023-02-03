@@ -8,10 +8,16 @@ formatBtn = document.querySelector('#format')
 
 // Camel Case Formatter
 
-const camelCaseFormatter = (fromEl, toEl) => {
-    let value = fromEl.value.replace('__', '_')
-    let words = value.split('_')
-    console.log(words); // ANCHOR console.log
+const camelCaseFormatter = (fromEl, toEl = null) => {
+    let value
+    if (fromEl.value != null && fromEl.value != undefined && fromEl.value != '') {
+        value = fromEl.value.replace('__', '_')
+    } else {
+        value = fromEl.replace('__', '_')
+    }
+
+    let words = value.split(/-|_/gm)
+
     let output = ''
     words.filter(word => word.trim() != '').forEach((el, i) => {
 
@@ -22,12 +28,13 @@ const camelCaseFormatter = (fromEl, toEl) => {
             output += el
         }
     })
-    inputTo.value = output
+    // inputTo.value = output
+    return output
 }
 // camelCaseFormatter()
 
 if (formatBtn != null && formatBtn != undefined) {
     formatBtn.addEventListener('click', () => {
-        camelCaseFormatter(inputFrom, inputTo)
+        inputTo.value = camelCaseFormatter(inputFrom, inputTo)
     })
 }
