@@ -20,19 +20,22 @@
     <aside>Menu laterale</aside>
 
     <main>
-      <div class="single_tool">
-        <h2>Camel Case Formatter</h2>
-        <input type="text" id="from_input" />
-        <input type="text" id="to_input" />
-        <button id="format" value="Format">Format</button>
-      </div>
-      <div class="single_tool">
-        <h2>CSS Properties for JS</h2>
-        <div class="textarea_wrapper">
-          <textarea id="textarea_1"></textarea>
+      <div class="grid grid_2_cols gap40">
+        <div class="single_tool">
+          <h2>Camel Case Formatter</h2>
+          <input type="text" id="from_input" />
+          <input type="text" id="to_input" />
+          <button id="format" value="Format">Format</button>
         </div>
-        <div class="textarea_wrapper">
-          <textarea id="textarea_2"></textarea>
+        <div class="single_tool">
+          <h2>CSS Properties for JS</h2>
+          <div class="textarea_wrapper">
+            <textarea id="textarea_1"></textarea>
+          </div>
+          <div class="textarea_wrapper">
+            <textarea id="textarea_2"></textarea>
+          </div>
+          <button data-trigger="css_to_js">Convert</button>
         </div>
       </div>
     </main>

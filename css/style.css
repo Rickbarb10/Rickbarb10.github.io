@@ -76,3 +76,103 @@ main {
 .textarea_wrapper {
     width: 100%;
 }
+
+.grid {
+    display: grid;
+}
+
+.auto_grid {
+    grid-auto-flow: column;
+}
+
+.align_center {
+    align-items: center;
+}
+
+/* ANCHOR Grid template columns */
+.grid_2_cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid_3_cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid_4_cols {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid_5_cols {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.grid_1_2_cols {
+    grid-template-columns: 1fr 2fr;
+}
+
+.grid_2_1_cols {
+    grid-template-columns: 2fr 1fr;
+}
+
+.grid_3_2_cols {
+    grid-template-columns: 3fr 2fr;
+}
+
+.grid_2_1_1_cols {
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+/* ANCHOR Valori GAP  */
+.gap10 {
+    gap: 10px;
+}
+
+.gap20 {
+    gap: 20px;
+}
+
+.gap30 {
+    gap: 30px;
+}
+
+.gap40 {
+    gap: 40px;
+}
+
+.gap50 {
+    gap: 50px;
+}
+
+.gap60 {
+    gap: 60px;
+}
+
+.gap70 {
+    gap: 70px;
+}
+
+.gap80 {
+    gap: 80px;
+}
+
+.gap90 {
+    gap: 90px;
+}
+
+.gap100 {
+    gap: 100px;
+}
+
+
+.jc-space-btw {
+    justify-content: space-between;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex-col {
+    flex-direction: column;
+}
