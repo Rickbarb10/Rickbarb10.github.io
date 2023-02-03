@@ -15,12 +15,10 @@ const convertCSStoJS = () => {
             chunkObj[chunk[0]] = chunk[1]
         } else {
             jsLikeKey = camelCaseFormatter(chunk[0])
-            console.log(jsLikeKey); // ANCHOR console.log
             chunkObj[jsLikeKey] = chunk[1]
         }
         chunksWithObjects.push(chunkObj)
     });
-    console.log(chunksWithObjects); // ANCHOR console.log
     txtArea2.value = ''
     chunksWithObjects.forEach((element, i) => {
         let singleLine = ''
